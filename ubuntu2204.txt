@@ -1,0 +1,2 @@
+sudo apt update
+sudo apt install torsocks curl synaptic neofetch gcc g++
