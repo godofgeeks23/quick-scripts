@@ -1,7 +1,5 @@
 sudo apt update
 sudo apt install wget zsh git fonts-font-awesome
-# create an empty .zshrc file
-# touch ~/.zshrc
 zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
