@@ -1,3 +1,5 @@
+# a general script to setup a fresh install of ubuntu
+
 sudo apt update
 sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku 
 sudo apt autoremove
