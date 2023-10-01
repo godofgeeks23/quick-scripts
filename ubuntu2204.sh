@@ -1,9 +1,10 @@
-# a general script to setup a fresh install of ubuntu
+# a helpful script to setup a fresh install of ubuntu - 
 
+# remove unnecessary packages and install helpful tools
 sudo apt update
 sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku remmina transmission thundebird rhythmbox
 sudo apt autoremove
-sudo apt install wget curl synaptic neofetch gcc g++ htop vlc software-properties-common apt-transport-https 
+sudo apt install wget curl synaptic neofetch gcc g++ htop vlc software-properties-common apt-transport-https git
 
 # install vscode
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
