@@ -1,4 +1,4 @@
-# a helpful script to setup a fresh install of ubuntu - 
+# a helpful script to setup a fresh install of ubuntu
 
 # remove unnecessary packages and install helpful tools
 sudo apt update
@@ -30,12 +30,13 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
 
-# install nvm
+# install nvm - for node
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+nvm install node
 
-# install conda
+# install conda - for python
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 
