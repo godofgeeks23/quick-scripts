@@ -1,4 +1,4 @@
-# a helpful script to setup a fresh install of ubuntu
+# a helpful script to setup a fresh install of ubuntu lts
 
 # remove unnecessary packages and install helpful tools
 sudo apt update
