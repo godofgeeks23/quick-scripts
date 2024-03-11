@@ -4,13 +4,13 @@
 sudo apt update
 sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku remmina transmission thundebird rhythmbox
 sudo apt autoremove
-sudo apt install wget curl synaptic neofetch gcc g++ htop vlc software-properties-common apt-transport-https git
+sudo apt install -y wget curl synaptic neofetch gcc g++ htop vlc software-properties-common apt-transport-https git
 
 # install vscode
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
-sudo apt install code
+sudo apt install -y code
 
 # install google chrome official
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -18,7 +18,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # install docker from official repo
 sudo apt-get update
-sudo apt-get install ca-certificates curl gnupg
+sudo apt-get install -y ca-certificates curl gnupg
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
@@ -27,7 +27,7 @@ echo \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
 
 # install nvm - for node and npm
