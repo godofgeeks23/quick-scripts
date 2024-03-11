@@ -1,7 +1,7 @@
 # this script will install zsh, oh-my-zsh, powerlevel10k, zsh-autosuggestions, zsh-syntax-highlighting, and font-awesome
 
 sudo apt update
-sudo apt install wget zsh git fonts-font-awesome
+sudo apt install -y wget zsh git fonts-font-awesome
 zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
